@@ -1,0 +1,14 @@
+A personal project - digital effects for the electric guitar, intended to be run on a raspberry pi equipped with a sound card. 
+
+- Requires the apt package 'libasound2-dev' on raspbian
+- Requires an ALSA compatible sound card
+- Uses DrWav for .wav file handling: https://mackron.github.io/dr_wav
+
+Implemented effects are:
+- Biquad filtering
+- Convolution (intended to be used with a guitar speaker impulse response)
+- Delay (echo)
+- Chorus / flanging
+- Tremolo
+
+The project uses explicit arm-specific SIMD intrinsics and as such is not portable.
